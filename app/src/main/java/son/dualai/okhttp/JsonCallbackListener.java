@@ -4,10 +4,13 @@ import android.os.Handler;
 import android.os.Looper;
 
 import com.alibaba.fastjson.JSON;
+import com.socks.library.KLog;
 
 import org.json.JSONObject;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -18,7 +21,7 @@ public class JsonCallbackListener<T> implements CallbackListener {
     private Handler mHandler = new Handler(Looper.getMainLooper());
     private IJsonDataListener mJsonDataListener;
 
-    public JsonCallbackListener(Class<T> responseClass,IJsonDataListener listener) {
+    public JsonCallbackListener(Class<T> responseClass, IJsonDataListener listener) {
         this.responseClass = responseClass;
         this.mJsonDataListener = listener;
     }
@@ -26,7 +29,7 @@ public class JsonCallbackListener<T> implements CallbackListener {
     @Override
     public void onSuccess(InputStream inputStream) {
         String response = getContent(inputStream);
-        final T resultObj = JSON.parseObject(response,responseClass); //这样子就把inputstream流直接转换成对象
+        final T resultObj = JSON.parseObject(response, responseClass); //这样子就把inputstream流直接转换成对象
         //转化到主线程
         mHandler.post(new Runnable() {
             @Override
@@ -50,10 +53,10 @@ public class JsonCallbackListener<T> implements CallbackListener {
             StringBuilder sb = new StringBuilder();
             String line = null;
             while ((line = reader.readLine()) != null) {
-                //TODO 为什么要加上\n ?
-                sb.append(line + "\n");
+                sb.append(line);
             }
             content = sb.toString();
+            KLog.d(content.getBytes().length);
         } catch (Exception e) {
             e.printStackTrace();
             content = null;

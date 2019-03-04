@@ -44,7 +44,8 @@ public class JSonHttpRequest implements IHttpRequest {
             urlConnection.setReadTimeout(3000); //相应的超时时间
             urlConnection.setDoInput(true); //设置这个链接是否可以写入数据
             urlConnection.setDoOutput(true); //设置这个链接是否可以输出数据
-            urlConnection.setRequestMethod("POST");
+//            urlConnection.setRequestMethod("POST");
+            urlConnection.setRequestMethod("GET");
             urlConnection.setRequestProperty("Content-Type", "application/json;charset=UTF-8");
             urlConnection.connect(); //连接，上述工作必须在connect之前完成
 

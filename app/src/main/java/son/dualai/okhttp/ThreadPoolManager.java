@@ -6,6 +6,7 @@ import android.util.TimeUtils;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.DelayQueue;
 import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -17,7 +18,8 @@ public class ThreadPoolManager {
     //1、创建队列，用来保存异步请求任务，
     // 先进先出，
     //LinkedBlockingDeque 双向队列  LinkedBlockingQueue 单向队列
-    private LinkedBlockingDeque<Runnable> mQueue = new LinkedBlockingDeque<>();
+//    private LinkedBlockingDeque<Runnable> mQueue = new LinkedBlockingDeque<>();
+    private LinkedBlockingQueue<Runnable> mQueue = new LinkedBlockingQueue<>();
 
     //2、添加异步任务到队列中
     public void addTask(Runnable runnable) {
@@ -44,15 +46,15 @@ public class ThreadPoolManager {
         @Override
         public void run() {
             HttpTask task = null;
-            while (true){
+            while (true) {
                 try {
                     task = mDelayQueue.take();
-                    if(task.getRetryCount() < 3){
+                    if (task.getRetryCount() < 3) {
                         mThreadPoolExecutor.execute(task);
                         task.setRetryCount(task.getRetryCount() + 1);
-                        Log.d(Util.TAG,"重试机制 "+task.getRetryCount());
-                    }else{
-                        Log.d(Util.TAG,"执行次数超限,放弃");
+                        Log.d(Util.TAG, "重试机制 " + task.getRetryCount());
+                    } else {
+                        Log.d(Util.TAG, "执行次数超限,放弃");
                     }
                 } catch (InterruptedException e) {
                     e.printStackTrace();
