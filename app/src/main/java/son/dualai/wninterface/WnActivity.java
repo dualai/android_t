@@ -1,15 +1,17 @@
-package son.dualai.okhttp_real;
+package son.dualai.wninterface;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.MessageQueue;
 
 import son.dualai.R;
 
-public class OkHttpRealActivity extends Activity {
+public class WnActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_okhttp_real);
+        setContentView(R.layout.activity_wn);
+
 
     }
 }

@@ -9,7 +9,7 @@ import android.widget.Button;
 import com.socks.library.KLog;
 
 import son.dualai.Util;
-import son.dualai.demo0301.R;
+import son.dualai.R;
 
 public class OkHttpActivity extends Activity {
     private Button testBtn;

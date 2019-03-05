@@ -1,4 +1,4 @@
-package son.dualai.demo0301;
+package son.dualai.adt;
 
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -14,9 +14,10 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
+import son.dualai.R;
 import son.dualai.Util;
 
-public class MainActivity extends AppCompatActivity implements View.OnTouchListener, View.OnClickListener {
+public class MainActivity extends AppCompatActivity{
 
     private FrameLayout root;
     private TextView button1;
@@ -25,25 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        root = (FrameLayout) findViewById(R.id.root);
-        button1 = (TextView) findViewById(R.id.button1);
 
-        root.setOnTouchListener(this);
-        button1.setOnTouchListener(this);
-
-        root.setOnClickListener(this);
-        button1.setOnClickListener(this);
 
     }
 
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        Log.d(Util.TAG,v+ " onTouch code:"+event.getAction());
-        return true;
-    }
-
-    @Override
-    public void onClick(View v) {
-        Log.d(Util.TAG,v+ " onClick");
-    }
 }

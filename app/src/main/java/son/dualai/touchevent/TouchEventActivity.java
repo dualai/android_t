@@ -12,8 +12,9 @@ import android.widget.ScrollView;
 import android.widget.Scroller;
 import android.widget.TextView;
 
+import son.dualai.R;
 import son.dualai.Util;
-import son.dualai.demo0301.R;
+
 
 public class TouchEventActivity extends AppCompatActivity implements View.OnTouchListener, View.OnClickListener {
 

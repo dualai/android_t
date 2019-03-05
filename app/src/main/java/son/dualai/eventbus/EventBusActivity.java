@@ -5,8 +5,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
+import son.dualai.R;
 import son.dualai.Util;
-import son.dualai.demo0301.R;
+
 import son.dualai.eventbus.eventbus.EventBean;
 import son.dualai.eventbus.eventbus.EventBus;
 import son.dualai.eventbus.eventbus.Subscrible;

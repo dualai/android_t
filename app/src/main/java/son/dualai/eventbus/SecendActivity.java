@@ -5,7 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import son.dualai.demo0301.R;
+
+import son.dualai.R;
 import son.dualai.eventbus.eventbus.EventBean;
 import son.dualai.eventbus.eventbus.EventBus;
 
