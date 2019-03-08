@@ -19,6 +19,5 @@ public class IoCActivity extends Activity {
 
         //getDeclaredMethods 只获取当前类，获取所有修饰符修饰的方法
 
-
     }
 }
