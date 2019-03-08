@@ -8,6 +8,8 @@ import son.dualai.mvp.MvpController;
 
 /**
  * Created on 2019/3/7.
+ * 给双方暴露需要相互调用的方法
+ * 将Model、View、Presenter 进行约束管理，方便后期类的查找、维护。
  */
 public interface IMainActivityContract {
     interface Iview extends IMvpView {

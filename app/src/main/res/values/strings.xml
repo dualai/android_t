@@ -4,4 +4,14 @@
     <string name="str_main_hangzhou">杭州</string>
     <string name="str_beijing">北京</string>
     <string name="str_shenzhen">深圳</string>
+
+    <!--~~~~~~~~~~~~~~~~~~登录~~~~~~~~~~~~~~~~~~~-->
+    <string name="login_btn_text">Sign In</string>
+    <string name="login_text_hint_username">Please enter the username</string>
+    <string name="login_text_hint_password">Please input a password</string>
+
+    <!-- ProgressDialog-->
+    <string name="progress_dialog_title">Progress Dialog</string>
+    <string name="progress_please_wait">Please wait…</string>
+
 </resources>
