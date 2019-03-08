@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="son.dualai.mvp2.pager.login.LoginActivity">
+        <activity android:name="son.IoC.IoCActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

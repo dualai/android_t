@@ -6,6 +6,7 @@ import son.dualai.mvp2.bean.LoginBean;
 import son.dualai.mvp2.bean.ResultBean;
 import son.dualai.mvp2.core.ApiDataEntity;
 import son.dualai.mvp2.core.ApiServer;
+import son.dualai.mvp2.core.INetwork;
 import son.dualai.mvp2.presenter.LoginPresenter;
 
 /**
@@ -13,7 +14,7 @@ import son.dualai.mvp2.presenter.LoginPresenter;
  */
 public interface LoginContract {
     interface IModel {
-        void login(String username, String password, ApiServer.ApiCallback callback);
+        void login(String username, String password, INetwork.ApiCallback callback);
     }
 
     interface IView extends BaseView<LoginPresenter> {
