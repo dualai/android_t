@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<son.customerview.EpGroup1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    >
+
+    <son.customerview.EpGroup2
+        android:id="@+id/content"
+        android:layout_width="50dp"
+        android:layout_height="100dp">
+
+        <son.customerview.EpTextView1
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xiaoming" />
+    </son.customerview.EpGroup2>
+
+    <son.customerview.EpGroup3
+        android:id="@+id/content2"
+        android:layout_width="50dp"
+        android:layout_height="100dp">
+
+        <son.customerview.EpTextView2
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xiaoming2" />
+    </son.customerview.EpGroup3>
+</son.customerview.EpGroup1>
