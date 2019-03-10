@@ -1,31 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <son.customerview.EpGroup1 xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/root"
+    android:orientation="vertical"
+    android:paddingTop="100px"
     >
 
-    <son.customerview.EpGroup2
-        android:id="@+id/content"
-        android:layout_width="50dp"
-        android:layout_height="100dp">
+    <!--<son.customerview.EpGroup2-->
+    <!--android:id="@+id/content"-->
+    <!--android:layout_width="500px"-->
+    <!--android:layout_height="500px">-->
 
-        <son.customerview.EpTextView1
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xiaoming" />
-    </son.customerview.EpGroup2>
+    <!--<son.customerview.EpTextView1-->
+    <!--android:id="@+id/text"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="xiaoming" />-->
+    <!--</son.customerview.EpGroup2>-->
 
-    <son.customerview.EpGroup3
-        android:id="@+id/content2"
-        android:layout_width="50dp"
-        android:layout_height="100dp">
+    <!--<son.customerview.EpGroup3-->
+    <!--android:id="@+id/content2"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
 
-        <son.customerview.EpTextView2
-            android:id="@+id/text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="xiaoming2" />
-    </son.customerview.EpGroup3>
+    <!--<son.customerview.EpTextView2-->
+    <!--android:id="@+id/text2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="xiaoming2" />-->
+    <!--</son.customerview.EpGroup3>-->
+
+    <son.customerview.TagLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#99ff0000"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:text="大水发的撒范德萨范德萨你好啊啊"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="adfdsaf"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="e"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="的疯狂大反馈爱迪生"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="badfgadsfd"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="a"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="ab"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="abeeee"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="adfdsafdss"
+            style="@style/Text_Item_Tag"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:text="fdadsfs"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="地方大范德萨"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="啊啊啊啊"
+            style="@style/Text_Item_Tag"
+            />
+
+        <TextView
+            android:text="==风大是范德萨范德萨"
+            style="@style/Text_Item_Tag"
+            />
+
+    </son.customerview.TagLayout>
 </son.customerview.EpGroup1>

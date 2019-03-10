@@ -26,6 +26,8 @@ public class EpTextView2 extends AppCompatTextView {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int mode = MeasureSpec.getMode(widthMeasureSpec);
+        Log.d(Util.TAG, "**********mode:" + getClass().getName()+" mode:" + Util.getMode(mode) + " size:"+MeasureSpec.getSize(widthMeasureSpec));
         Log.d(Util.TAG, " " + getClass().getName() + " onMeasure start");
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         Log.d(Util.TAG, " " + getClass().getName() + " onMeasure done");
