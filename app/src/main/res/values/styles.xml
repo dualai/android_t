@@ -12,6 +12,11 @@
     <style name="FullScree" parent="AppTheme" >
         <item name="android:windowFullscreen">true</item>
     </style>
+    
+    <style name="Keep_theme" parent="Theme.AppCompat.NoActionBar">
+        <!--<item name="android:windowBackground">@null</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+    </style>
 
     <style name="video_view_style">
         <item name="android:layout_width">match_parent</item>

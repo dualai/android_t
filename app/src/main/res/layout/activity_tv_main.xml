@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <son.tv.TvGroup
+        android:id="@+id/group"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        >
+
+        <son.tv.SubText
+            android:id="@+id/subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sl_focus"
+            android:focusable="true"
+            android:text="@string/app_name"
+            android:padding="10dp"
+            />
+    </son.tv.TvGroup>
+
+</LinearLayout>

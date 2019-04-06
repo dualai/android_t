@@ -20,6 +20,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import okhttp3.internal.cache.DiskLruCache;
 import son.dualai.Util;
 import son.dualai.mvp2.core.ApiServer;
 import son.dualai.mvp2.core.INetwork;
@@ -62,6 +63,8 @@ public class OkHttpUtil {
                 });
             }
         });
+
+
     }
 
 }
