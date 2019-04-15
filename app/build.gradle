@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'org.greenrobot.greendao' // apply plugin
 android {
 
     compileSdkVersion Integer.valueOf(compile_sdk_version)
@@ -41,6 +41,7 @@ dependencies {
     implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
     implementation("com.squareup.okhttp3:okhttp:3.13.1")
 
+    implementation 'org.greenrobot:greendao:3.2.2' // add library
 //    implementation 'com.github.bumptech.glide:glide:4.9.0'
 //    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 

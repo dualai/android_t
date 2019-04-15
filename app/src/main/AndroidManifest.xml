@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
-
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
@@ -15,15 +14,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name="son.glide2.GlideActivity"
+        android:theme="@style/AppTheme"
+        android:name="son.screencomp.JettApplication"
+        >
+        <activity android:name="son.screencomp.MainActivity"
+            android:launchMode="singleTask"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="son.test.Test1Activity"
+            />
+
+        <activity android:name="son.test.Test2Activity"
+            />
 
         <activity android:name="son.keepalive.KeepAliveActivity"
             android:excludeFromRecents="true"
