@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme"
         android:name="son.screencomp.JettApplication"
         >
-        <activity android:name="son.screencomp.MainActivity"
+        <activity android:name="son.rvadapter.MainActivity"
             android:launchMode="singleTask"
             >
             <intent-filter>
