@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme"
         android:name="son.screencomp.JettApplication"
         >
-        <activity android:name="son.rvadapter.MainActivity"
+        <activity android:name="leasons.ui.compatstyle_01.MainActivity"
             android:launchMode="singleTask"
             >
             <intent-filter>
